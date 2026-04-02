@@ -37,9 +37,8 @@
   /** Return short display label, e.g. "EN", "ZH-HANS" */
   const shortLabel = (code) => code.toUpperCase();
 
-  /** Resolve a dot-path key against a nested object */
-  const resolve = (obj, path) =>
-    path.split('.').reduce((acc, key) => (acc != null ? acc[key] : undefined), obj);
+  /** Look up a translation key (flat key like "hero.title") */
+  const resolve = (obj, key) => obj[key];
 
   /* ── Language detection ──────────────────────── */
 
@@ -172,11 +171,9 @@
     buildDropdown(lang);
     initDropdownToggle();
 
-    // Only fetch & apply if not default English (HTML already has EN text)
-    if (lang !== 'en') {
-      const translations = await fetchTranslations(lang);
-      applyTranslations(translations);
-    }
+    // Always fetch & apply translations (including EN for switching back)
+    const translations = await fetchTranslations(lang);
+    applyTranslations(translations);
   };
 
   document.addEventListener('DOMContentLoaded', init);

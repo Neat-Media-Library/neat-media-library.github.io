@@ -283,7 +283,7 @@ ul {
   z-index: 100;
 }
 
-.lang-selector__dropdown.is-open {
+.lang-selector__dropdown.lang-selector__dropdown--open {
   display: block;
 }
 
