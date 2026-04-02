@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neat — Organize, Clean & Compress Your Photos & Videos</title>
+  <meta name="description" content="Neat is an iOS app for organizing, cleaning, and compressing your photo and video library. 100% on-device. Your media stays private.">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/app-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Neat — Organize, Clean & Compress Your Media">
+  <meta property="og:description" content="Browse, sort, clean up, and compress your photos and videos. 100% on-device privacy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="/" class="nav__brand">
+        <img src="images/app-icon.png" alt="Neat app icon" class="nav__icon" width="40" height="40">
+        <span class="nav__wordmark">Neat</span>
+      </a>
+      <div class="nav__actions">
+        <div class="lang-selector" id="lang-selector">
+          <button class="lang-selector__btn" id="lang-btn" aria-label="Change language" aria-expanded="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+            <span id="lang-label">EN</span>
+            <svg class="lang-selector__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="lang-selector__dropdown" id="lang-dropdown" role="listbox" aria-label="Select language"></div>
+        </div>
+        <a href="#" class="btn btn--primary nav__cta" id="app-store-link" data-i18n="cta.download">Download on the App Store</a>
+      </div>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile-menu" id="mobile-menu">
+      <a href="#" class="btn btn--primary" id="app-store-link-mobile" data-i18n="cta.download">Download on the App Store</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title" data-i18n="hero.title">Your Media, Organized</h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">Browse, clean up, and compress your photos and videos — all on your device. Neat keeps your library tidy and your privacy intact.</p>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--primary btn--lg" data-i18n="cta.download">Download on the App Store</a>
+            <a href="#features" class="btn btn--ghost btn--lg" data-i18n="cta.learnMore">Learn More</a>
+          </div>
+          <p class="hero__note" data-i18n="hero.note">Free · iOS 18+ · No account required</p>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__phone-mockup">
+            <div class="hero__screenshot-placeholder" data-i18n-attr="alt" data-i18n-attr-key="hero.screenshotAlt">
+              <div class="placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              </div>
+              <span class="placeholder-text" data-i18n="hero.screenshotPlaceholder">App screenshot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+
+    <!-- Feature 1: Organize -->
+    <div class="feature" id="feature-organize">
+      <div class="container">
+        <div class="feature__grid">
+          <div class="feature__visual fade-in">
+            <div class="feature__screenshot-slot">
+              <div class="placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              </div>
+              <span class="placeholder-text" data-i18n="features.screenshotPlaceholder">Screenshot</span>
+            </div>
+          </div>
+          <div class="feature__content fade-in">
+            <div class="feature__icon feature__icon--blue">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="8" height="8" rx="1"/></svg>
+            </div>
+            <h2 class="feature__title" data-i18n="features.organize.title">Your Media, Organized</h2>
+            <p class="feature__description" data-i18n="features.organize.description">Browse all your photos and videos in one place. Sort by date, size, resolution, or duration. Filter by file size to find what takes up the most space.</p>
+            <ul class="feature__list">
+              <li data-i18n="features.organize.item1">Sort by date, size, resolution & duration</li>
+              <li data-i18n="features.organize.item2">Filter by file size and compression status</li>
+              <li data-i18n="features.organize.item3">Instant size calculations with smart caching</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 2: Clean Up -->
+    <div class="feature feature--reverse" id="feature-cleanup">
+      <div class="container">
+        <div class="feature__grid">
+          <div class="feature__visual fade-in">
+            <div class="feature__screenshot-slot">
+              <div class="placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              </div>
+              <span class="placeholder-text" data-i18n="features.screenshotPlaceholder">Screenshot</span>
+            </div>
+          </div>
+          <div class="feature__content fade-in">
+            <div class="feature__icon feature__icon--orange">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+            </div>
+            <h2 class="feature__title" data-i18n="features.cleanup.title">Select & Clean Up</h2>
+            <p class="feature__description" data-i18n="features.cleanup.description">Drag to select multiple items at once. Batch delete what you don't need. Find your largest files instantly with smart sorting and filtering.</p>
+            <ul class="feature__list">
+              <li data-i18n="features.cleanup.item1">Drag-to-select multiple items at once</li>
+              <li data-i18n="features.cleanup.item2">Batch delete to free up space fast</li>
+              <li data-i18n="features.cleanup.item3">Find the biggest files instantly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3: Compress -->
+    <div class="feature" id="feature-compress">
+      <div class="container">
+        <div class="feature__grid">
+          <div class="feature__visual fade-in">
+            <div class="feature__screenshot-slot">
+              <div class="placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              </div>
+              <span class="placeholder-text" data-i18n="features.screenshotPlaceholder">Screenshot</span>
+            </div>
+          </div>
+          <div class="feature__content fade-in">
+            <div class="feature__icon feature__icon--purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <h2 class="feature__title" data-i18n="features.compress.title">Compress & Save Space</h2>
+            <p class="feature__description" data-i18n="features.compress.description">Reduce file sizes with adjustable quality presets. Preview before and after. Save as a copy or replace the original — you're in control.</p>
+            <ul class="feature__list">
+              <li data-i18n="features.compress.item1">Three quality presets: Max savings, Balanced, Best quality</li>
+              <li data-i18n="features.compress.item2">Preview before & after compression</li>
+              <li data-i18n="features.compress.item3">Replace original or save as a copy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 4: Privacy -->
+    <div class="feature feature--reverse" id="feature-privacy">
+      <div class="container">
+        <div class="feature__grid">
+          <div class="feature__visual fade-in">
+            <div class="feature__screenshot-slot">
+              <div class="placeholder-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              </div>
+              <span class="placeholder-text" data-i18n="features.screenshotPlaceholder">Screenshot</span>
+            </div>
+          </div>
+          <div class="feature__content fade-in">
+            <div class="feature__icon feature__icon--green">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <h2 class="feature__title" data-i18n="features.privacy.title">Your Privacy, Protected</h2>
+            <p class="feature__description" data-i18n="features.privacy.description">All your photos and videos are processed entirely on your device. Nothing is ever uploaded to any server. Your media stays private — always.</p>
+            <ul class="feature__list">
+              <li data-i18n="features.privacy.item1">100% on-device processing</li>
+              <li data-i18n="features.privacy.item2">No accounts, no sign-ups, no tracking</li>
+              <li data-i18n="features.privacy.item3">Built with Apple's Photos framework</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights" id="highlights">
+    <div class="container">
+      <h2 class="highlights__title fade-in" data-i18n="highlights.title">And More</h2>
+      <div class="highlights__grid">
+        <div class="highlight-card fade-in">
+          <div class="highlight-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19.5 10c0 6.5-7.5 12-7.5 12S4.5 16.5 4.5 10a7.5 7.5 0 0 1 15 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 data-i18n="highlights.icloud.title">iCloud Ready</h3>
+          <p data-i18n="highlights.icloud.description">Works seamlessly with iCloud Photos. Download, preview, and compress cloud-stored media right from the app.</p>
+        </div>
+        <div class="highlight-card fade-in">
+          <div class="highlight-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+          </div>
+          <h3 data-i18n="highlights.languages.title">15 Languages</h3>
+          <p data-i18n="highlights.languages.description">Fully localized in English, Spanish, German, French, Italian, Japanese, Korean, Dutch, Russian, and more.</p>
+        </div>
+        <div class="highlight-card fade-in">
+          <div class="highlight-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5h12z"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3 data-i18n="highlights.accessibility.title">Accessible</h3>
+          <p data-i18n="highlights.accessibility.description">Full VoiceOver support, semantic labels, and reduced motion settings. Designed for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner" id="download">
+    <div class="container">
+      <div class="cta-banner__content fade-in">
+        <h2 data-i18n="cta.bannerTitle">Take Control of Your Library</h2>
+        <p data-i18n="cta.bannerSubtitle">Download Neat and start organizing, cleaning, and compressing your photos and videos today.</p>
+        <a href="#" class="btn btn--primary btn--lg" data-i18n="cta.download">Download on the App Store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <img src="images/app-icon.png" alt="Neat" class="footer__icon" width="32" height="32">
+          <span class="footer__wordmark">Neat</span>
+        </div>
+        <div class="footer__links">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        </div>
+        <p class="footer__copyright" data-i18n="footer.copyright">© 2025 Neat. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

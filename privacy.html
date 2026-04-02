@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Neat</title>
+  <meta name="description" content="Privacy policy for Neat, the iOS app for organizing and compressing your media library.">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/app-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — Neat">
+  <meta property="og:description" content="Privacy policy for Neat, the iOS app for organizing and compressing your media library.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="/" class="nav__brand">
+        <img src="images/app-icon.png" alt="Neat app icon" class="nav__icon" width="40" height="40">
+        <span class="nav__wordmark">Neat</span>
+      </a>
+      <div class="nav__actions">
+        <div class="lang-selector" id="lang-selector">
+          <button class="lang-selector__btn" id="lang-btn" aria-label="Change language" aria-expanded="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+            <span id="lang-label">EN</span>
+            <svg class="lang-selector__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="lang-selector__dropdown" id="lang-dropdown" role="listbox" aria-label="Select language"></div>
+        </div>
+        <a href="#" class="btn btn--primary nav__cta" id="app-store-link" data-i18n="cta.download">Download on the App Store</a>
+      </div>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile-menu" id="mobile-menu">
+      <a href="#" class="btn btn--primary" id="app-store-link-mobile" data-i18n="cta.download">Download on the App Store</a>
+    </div>
+  </nav>
+
+  <!-- Privacy Policy -->
+  <main class="privacy">
+    <div class="container">
+      <header class="privacy__header">
+        <h1 data-i18n="privacy.title">Privacy Policy</h1>
+        <p class="privacy__updated" data-i18n="privacy.lastUpdated">Last updated: July 2025</p>
+        <p class="privacy__intro" data-i18n="privacy.intro">Neat is designed with privacy as a core principle. Everything happens on your device — we have no servers, no accounts, and no way to access your data.</p>
+      </header>
+
+      <section class="privacy__section">
+        <h2 data-i18n="privacy.section1.title">Data Collection</h2>
+        <p data-i18n="privacy.section1.content">Neat does not collect, store, or transmit any personal data. There are no user accounts, no sign-ups, and no databases. All processing happens entirely on your device.</p>
+      </section>
+
+      <section class="privacy__section">
+        <h2 data-i18n="privacy.section2.title">Photo Library Access</h2>
+        <p data-i18n="privacy.section2.content">Neat accesses your photo library through Apple's Photos framework. This access is used solely to display, organize, and compress your media. Your photos and videos never leave your device.</p>
+      </section>
+
+      <section class="privacy__section">
+        <h2 data-i18n="privacy.section3.title">Network Usage</h2>
+        <p data-i18n="privacy.section3.content">Neat does not make any network requests on its own. The only network activity that may occur is when iCloud Photos downloads media to your device, which is handled entirely by Apple's system frameworks.</p>
+      </section>
+
+      <section class="privacy__section">
+        <h2 data-i18n="privacy.section4.title">Analytics &amp; Tracking</h2>
+        <p data-i18n="privacy.section4.content">Neat does not include any analytics, crash reporting, or tracking tools. We do not use cookies, fingerprinting, or any other identification mechanism. Your usage is completely private.</p>
+      </section>
+
+      <section class="privacy__section">
+        <h2 data-i18n="privacy.section5.title">Third-Party Services</h2>
+        <p data-i18n="privacy.section5.content">Neat does not integrate any third-party SDKs, libraries, or services that collect data. The app is built using only Apple's native frameworks.</p>
+      </section>
+
+      <section class="privacy__section">
+        <h2 data-i18n="privacy.section6.title">Changes to This Policy</h2>
+        <p data-i18n="privacy.section6.content">If we make changes to this privacy policy, we will update this page and the "last updated" date above. Since Neat does not collect any data, we do not have a way to notify you directly — please check back periodically.</p>
+      </section>
+
+      <section class="privacy__section">
+        <h2 data-i18n="privacy.section7.title">Contact</h2>
+        <p data-i18n="privacy.section7.content">If you have questions or concerns about this privacy policy, please open an issue on our GitHub repository.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <img src="images/app-icon.png" alt="Neat" class="footer__icon" width="32" height="32">
+          <span class="footer__wordmark">Neat</span>
+        </div>
+        <div class="footer__links">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        </div>
+        <p class="footer__copyright" data-i18n="footer.copyright">© 2025 Neat. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
