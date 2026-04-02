@@ -89,6 +89,12 @@
       const value = resolve(translations, key);
       if (value !== undefined) el.textContent = value;
     });
+
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-html');
+      const value = resolve(translations, key);
+      if (value !== undefined) el.innerHTML = value;
+    });
   };
 
   /* ── Language selector ───────────────────────── */
