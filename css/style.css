@@ -725,7 +725,8 @@ ul {
 
 .privacy__header {
   max-width: 720px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
+  text-align: center;
 }
 
 .privacy__header h1 {
@@ -749,7 +750,7 @@ ul {
 
 .privacy__section {
   max-width: 720px;
-  margin-bottom: 36px;
+  margin: 0 auto 36px;
 }
 
 .privacy__section h2 {
