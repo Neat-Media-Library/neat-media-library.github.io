@@ -147,7 +147,7 @@ ul {
 .nav__icon {
   width: 36px;
   height: 36px;
-  border-radius: 22%;
+  border-radius: 50%;
   overflow: hidden;
   display: block;
 }
