@@ -147,7 +147,9 @@ ul {
 .nav__icon {
   width: 36px;
   height: 36px;
-  border-radius: 10px;
+  border-radius: 22%;
+  overflow: hidden;
+  display: block;
 }
 
 .nav__wordmark {
@@ -687,7 +689,9 @@ ul {
 .footer__icon {
   width: 28px;
   height: 28px;
-  border-radius: 8px;
+  border-radius: 22%;
+  overflow: hidden;
+  display: block;
 }
 
 .footer__wordmark {
