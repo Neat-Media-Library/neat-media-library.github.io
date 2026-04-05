@@ -57,38 +57,6 @@
     });
   };
 
-  /* ── Mobile hamburger menu ───────────────────── */
-
-  const initMobileMenu = () => {
-    const hamburger = document.getElementById('nav-hamburger');
-    const menu = document.getElementById('mobile-menu');
-    if (!hamburger || !menu) return;
-
-    const toggle = (open) => {
-      const isOpen = typeof open === 'boolean' ? open : !menu.classList.contains('nav__mobile-menu--open');
-      menu.classList.toggle('nav__mobile-menu--open', isOpen);
-      hamburger.classList.toggle('nav__hamburger--active', isOpen);
-      hamburger.setAttribute('aria-expanded', isOpen);
-    };
-
-    hamburger.addEventListener('click', (e) => {
-      e.stopPropagation();
-      toggle();
-    });
-
-    // Close on link click inside menu
-    menu.addEventListener('click', (e) => {
-      if (e.target.closest('a')) toggle(false);
-    });
-
-    // Close on outside click
-    document.addEventListener('click', (e) => {
-      if (!e.target.closest('#mobile-menu') && !e.target.closest('#nav-hamburger')) {
-        toggle(false);
-      }
-    });
-  };
-
   /* ── Nav background on scroll ────────────────── */
 
   const initNavScroll = () => {
@@ -110,7 +78,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     initFadeIn();
     initSmoothScroll();
-    initMobileMenu();
     initNavScroll();
   });
 })();
